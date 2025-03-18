@@ -1,0 +1,71 @@
+.parent{
+  margin: 2%;
+}
+
+
+.form-container .MuiGrid-item {
+    margin-bottom: 16px; /* Add space between form elements */
+  }
+  
+  .table-container {
+    margin-top: 24px; /* Add space between form and table */
+  }
+  
+  .custom-table table {
+    width: auto; /* Adjust the table width */
+    margin: 0 auto; /* Center the table */
+  }
+  
+  .custom-table table th, .custom-table table td {
+    padding: 8px 12px; 
+  }
+
+  
+
+ .FinancialHeading{
+  margin-top: 2%;
+  margin-bottom: 2%;
+ }
+
+
+  /* styling volvo components */
+
+
+  .custom-table table th {
+    background-color: #E1E1E1; /* Set table header color */
+  }
+  .table-header{
+    background-color: #E1E1E1;
+  }
+
+
+  vcdk-table table tbody tr td:first-child {
+    color: darkred;
+  }
+
+
+
+  /* to change the defulat color of buttons we can ::part pseudo-element. */
+  vcdk-button::part(button) {
+    background-color: green;
+    color: white;
+}
+
+
+/* these below css to chnage the color of typography  */
+.FinancialHeading vcdk-typography {
+  --vcdk-color-text: purple;
+}
+
+
+/* Apply css for tabs (to change color of the tab names) */
+vcdk-tab:first-child::part(tab),
+vcdk-tab:last-child:not([disabled])::part(tab) {
+  color: green;
+  /* background-color: lightgray !important; */
+}
+
+.tabs{
+  margin-top: 2%;
+  margin-bottom: 2%; 
+}
