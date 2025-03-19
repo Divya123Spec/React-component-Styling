@@ -1,0 +1,43 @@
+.custom-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.custom-heading {
+    margin-bottom: 20px;
+}
+
+.custom-label {
+    font-weight: bold;
+    color: orange; /* Changed label color to orange */
+}
+
+.custom-input {
+    border: 2px solid grey; /* Changed border color to grey */
+    border-radius: 4px;
+}
+
+.custom-select {
+    border: 2px solid grey; /* Changed border color to grey */
+    border-radius: 4px;
+}
+
+.custom-select option {
+    color: purple; /* Changed dropdown values color to purple */
+}
+
+.custom-checkbox {
+    margin-top: 10px;
+}
+
+.custom-button {
+    background-color: black;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+}
+.custom-button:hover {
+    background-color: grey; /* Keep the background color black on hover */
+    color: white; /* Ensure the text color remains white on hover */
+}

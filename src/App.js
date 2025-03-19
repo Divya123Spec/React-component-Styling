@@ -1,5 +1,4 @@
 import './App.css';
-import { Button as VolvoButton } from "@volvo/vcdk-react";
 import { Button as MuiButton } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import { Button as BootstrapButton } from 'react-bootstrap';
@@ -7,38 +6,50 @@ import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import VolvoComponent from './VolvoComponent';
 import MaterialUIComponent from './MaterialUIComponent';
 import BootstrapComponent from './BootstrapComponent';
+import VolvoTheme from './VolvoTheme';
 import "@volvo/vcdk/themes/all-semantic.css"; // Import all brands and modes
 import { VcdkElement } from "@volvo/vcdk/vcdk-element";
 
 // Set the default theme
-VcdkElement.defaultTheme = "renault-light";
+VcdkElement.defaultTheme = "volvo-light";
 
 function Home() {
   return (
     <div className="App">
-      <h1>Styling React Component Library Demo</h1>
+      <h1 style={{margin:"12px"}}>Styling React Component Library Demo</h1>
+      <Grid className ="parent_cls">
       <Grid container spacing={3}>
-        <Grid item xs={12} md={4}>
+        <Grid item xs={12} md={3}>
           <Link to="/volvo-experience">
-            <VolvoButton variant="marketing" size="medium">
+            <vcdk-button variant="marketing"  >
               Volvo Experience
-            </VolvoButton>
+            </vcdk-button>
           </Link>
         </Grid>
-        <Grid item xs={12} md={4}>
+        <Grid item xs={12} md={3}>
+          <Link to="/volvo-theme">
+            <vcdk-button variant="tertiary" className="custom-button">
+              VolvoTheme
+            </vcdk-button>
+            
+
+          </Link>
+        </Grid>
+        <Grid item xs={12} md={3}>
           <Link to="/material-ui">
             <MuiButton variant="contained" color="primary">
               Material UI
             </MuiButton>
           </Link>
         </Grid>
-        <Grid item xs={12} md={4}>
+        <Grid item xs={12} md={3}>
           <Link to="/bootstrap">
-            <BootstrapButton variant="primary">
+            <BootstrapButton variant="secondary">
               Bootstrap
             </BootstrapButton>
           </Link>
         </Grid>
+      </Grid>
       </Grid>
     </div>
   );
@@ -52,6 +63,7 @@ function App() {
         <Route path="/volvo-experience" element={<VolvoComponent />} />
         <Route path="/material-ui" element={<MaterialUIComponent />} />
         <Route path="/bootstrap" element={<BootstrapComponent />} />
+        <Route path="/volvo-theme" element={<VolvoTheme />} />
       </Routes>
     </Router>
   );
