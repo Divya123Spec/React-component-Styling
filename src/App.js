@@ -7,7 +7,9 @@ import VolvoComponent from './VolvoComponent';
 import MaterialUIComponent from './MaterialUIComponent';
 import BootstrapComponent from './BootstrapComponent';
 import VolvoTheme from './VolvoTheme';
-import "@volvo/vcdk/themes/all-semantic.css"; // Import all brands and modes
+import "@volvo/vcdk/themes/all-semantic.css"; 
+import "@volvo/vcdk/themes/volvo/semantic-dark.css";
+import "@volvo/vcdk/themes/volvo/semantic-light.css";
 import { VcdkElement } from "@volvo/vcdk/vcdk-element";
 
 // Set the default theme
@@ -16,40 +18,40 @@ VcdkElement.defaultTheme = "volvo-light";
 function Home() {
   return (
     <div className="App">
-      <h1 style={{margin:"12px"}}>Styling React Component Library Demo</h1>
-      <Grid className ="parent_cls">
-      <Grid container spacing={3}>
-        <Grid item xs={12} md={3}>
-          <Link to="/volvo-experience">
-            <vcdk-button variant="marketing"  >
-              Volvo Experience
-            </vcdk-button>
-          </Link>
-        </Grid>
-        <Grid item xs={12} md={3}>
-          <Link to="/volvo-theme">
-            <vcdk-button variant="tertiary" className="custom-button">
-              VolvoTheme
-            </vcdk-button>
-            
+      <h1 style={{ margin: "12px" }}>Styling React Component Library Demo</h1>
+      <Grid className="parent_cls">
+        <Grid container spacing={3}>
+          <Grid item xs={12} md={3}>
+            <Link to="/volvo-experience">
+              <vcdk-button variant="marketing"  >
+                Volvo Experience
+              </vcdk-button>
+            </Link>
+          </Grid>
+          <Grid item xs={12} md={3}>
+            <Link to="/volvo-theme">
+              <vcdk-button variant="tertiary" className="custom-theme_button">
+                VolvoTheme
+              </vcdk-button>
 
-          </Link>
+
+            </Link>
+          </Grid>
+          <Grid item xs={12} md={3}>
+            <Link to="/material-ui">
+              <MuiButton variant="contained" color="primary">
+                Material UI
+              </MuiButton>
+            </Link>
+          </Grid>
+          <Grid item xs={12} md={3}>
+            <Link to="/bootstrap">
+              <BootstrapButton variant="secondary">
+                Bootstrap
+              </BootstrapButton>
+            </Link>
+          </Grid>
         </Grid>
-        <Grid item xs={12} md={3}>
-          <Link to="/material-ui">
-            <MuiButton variant="contained" color="primary">
-              Material UI
-            </MuiButton>
-          </Link>
-        </Grid>
-        <Grid item xs={12} md={3}>
-          <Link to="/bootstrap">
-            <BootstrapButton variant="secondary">
-              Bootstrap
-            </BootstrapButton>
-          </Link>
-        </Grid>
-      </Grid>
       </Grid>
     </div>
   );

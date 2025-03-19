@@ -32,18 +32,18 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-
-.custom-button::part(button) {
+.custom-theme_button::part(button) {
   background-color: black;
   color: white;
 }
 
-.parent_cls{
-margin-top:2%;
-margin-bottom: 2%;
+.parent_cls {
+  margin-top: 6%;
+
 }
