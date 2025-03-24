@@ -1,4 +1,4 @@
-/* .accrodian_sample .MuiPaper-root.MuiAccordion-root {
+.accrodian_sample .MuiPaper-root.MuiAccordion-root {
     width: 70%;
   }
   
@@ -16,4 +16,4 @@
 
 .stepper_sample .MuiSvgIcon-root.MuiStepIcon-root.Mui-completed {
     color: black;
-}  */
+} 

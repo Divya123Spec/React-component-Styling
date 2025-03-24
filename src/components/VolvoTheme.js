@@ -1,8 +1,7 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
-import "@volvo/vcdk/themes/all-semantic.css"; // Import all brands and modes
 import { VcdkElement } from "@volvo/vcdk/vcdk-element";
-import "@volvo/vcdk/themes/all-semantic.css"; // Import all themes
+import "@volvo/vcdk/themes/all-semantic.css"; 
 import "@volvo/vcdk/themes/volvo/semantic-light.css";
 import "@volvo/vcdk/themes/volvo/semantic-dark.css";
 import "./VolvoTheme.css"
